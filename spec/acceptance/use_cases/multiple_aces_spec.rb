@@ -1,6 +1,6 @@
 require 'spec_helper_acceptance'
 
-describe 'Use Cases' do
+describe 'Use Cases' , :integration do
   let(:acl_manifest) do
     <<-MANIFEST
       file { "#{target_parent}":

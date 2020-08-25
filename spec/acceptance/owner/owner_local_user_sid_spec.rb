@@ -2,7 +2,7 @@ require 'spec_helper_acceptance'
 
 sid = ''
 
-describe 'Owner - SID' do
+describe 'Owner - SID' , :integration do
   let(:setup_manifest) do
     <<-MANIFEST
       file { "#{target_parent}":

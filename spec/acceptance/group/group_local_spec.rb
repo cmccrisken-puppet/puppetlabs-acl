@@ -1,6 +1,6 @@
 require 'spec_helper_acceptance'
 
-describe 'Group' do
+describe 'Group' , :integration do
   let(:acl_manifest) do
     <<-MANIFEST
       file { "#{target_parent}":
