@@ -1,6 +1,6 @@
 require 'spec_helper_acceptance'
 
-describe 'Basic Functionality - Negative' do
+describe 'Basic Functionality - Negative' , :integration do
   let(:acl_manifest) do
     <<-MANIFEST
       file { '/tmp/acl_test':

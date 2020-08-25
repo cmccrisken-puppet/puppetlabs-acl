@@ -2,7 +2,7 @@ require 'spec_helper_acceptance'
 
 sid = ''
 
-describe 'Module - Identity' do
+describe 'Module - Identity' , :integration do
   let(:setup_manifest) do
     <<-MANIFEST
       file { '#{target_parent}':

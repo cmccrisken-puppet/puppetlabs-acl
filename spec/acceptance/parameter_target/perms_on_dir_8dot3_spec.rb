@@ -1,6 +1,6 @@
 require 'spec_helper_acceptance'
 
-describe 'Permissions - Directory - 8.3' do
+describe 'Permissions - Directory - 8.3' , :integration do
   let(:acl_manifest) do
     <<-MANIFEST
       file { "#{target_parent}":

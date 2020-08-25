@@ -1,6 +1,6 @@
 require 'spec_helper_acceptance'
 
-describe 'Permissions - File' do
+describe 'Permissions - File' , :integration do
   let(:acl_manifest) do
     <<-MANIFEST
       file { '#{target_parent}':

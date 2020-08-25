@@ -1,6 +1,6 @@
 require 'spec_helper_acceptance'
 
-describe 'File - Allow Mask Specific' do
+describe 'File - Allow Mask Specific' , :integration do
   let(:acl_manifest) do
     <<-MANIFEST
       file { '#{target_parent}':

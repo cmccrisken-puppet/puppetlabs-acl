@@ -1,6 +1,6 @@
 require 'spec_helper_acceptance'
 
-describe 'Owner - Local User' do
+describe 'Owner - Local User' , :integration do
   let(:acl_manifest) do
     <<-MANIFEST
       file { "#{target_parent}":

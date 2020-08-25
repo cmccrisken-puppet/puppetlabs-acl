@@ -1,7 +1,7 @@
 require 'spec_helper_acceptance'
 
 describe 'Purge' do
-  let(:acl_manifest) do
+  let(:acl_manifest) , :integration do
     <<-MANIFEST
       file { "#{target_parent}":
         ensure => directory
