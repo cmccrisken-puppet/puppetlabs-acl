@@ -1,6 +1,6 @@
 require 'spec_helper_acceptance'
 
-describe 'Identity' do
+describe 'Identity' , :integration do
   [
     { id: 'S-1-15-2-1',
       acl_regex: %r{.*APPLICATION PACKAGE AUTHORITY\\ALL APPLICATION PACKAGES:\(OI\)\(CI\)\(F\)},

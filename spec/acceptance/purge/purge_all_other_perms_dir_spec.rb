@@ -2,7 +2,7 @@ require 'spec_helper_acceptance'
 
 random_username = generate_random_username
 
-describe 'Purge' do
+describe 'Purge' , :integration do
   let(:acl_manifest) do
     <<-MANIFEST
       file { "#{target_parent}":

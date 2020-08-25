@@ -1,6 +1,6 @@
 require 'spec_helper_acceptance'
 
-describe 'Inheritance - Directory' do
+describe 'Inheritance - Directory' , :integration do
   let(:rights) { 'full' }
   let(:user_id_child) { 'roberto' }
   let(:target_name) { "inherit_#{perm_type}_on_#{asset_type}" }

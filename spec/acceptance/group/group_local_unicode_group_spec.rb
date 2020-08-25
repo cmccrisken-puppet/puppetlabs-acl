@@ -2,7 +2,7 @@ require 'spec_helper_acceptance'
 
 prefix = SecureRandom.uuid.to_s
 
-describe 'Group - Unicode' do
+describe 'Group - Unicode' , :integration do
   let(:acl_manifest) do
     <<-MANIFEST
       file { "#{target_parent}":
